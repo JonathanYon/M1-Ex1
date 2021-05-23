@@ -29,7 +29,11 @@ let random = Math.floor(Math.random() * 21)
 /* Ex.D
     Create a variable called "me" and assign to it an object containing the following information: name = your name, surname = your surname, age = your age.
 */
-
+let me = {
+    name: "your name",
+    surname: "your surname",
+    age: 18
+}
 /* Ex.E 
     Programmatically remove the age property from the previously create object.
 */
