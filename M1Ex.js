@@ -41,7 +41,7 @@ delete me.age
 /* Ex.F 
    Programmatically add to the object me an array called "skills", containing the programming languages you know right now.
 */
-
+me.skills = ["HTML", "CSS"]
 /* Ex.G 
    Programmatically remove the last skill from the "skills" array inside the "me" object.
 */
