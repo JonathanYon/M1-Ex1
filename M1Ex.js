@@ -19,6 +19,8 @@ let test = "what string ?";
 /* Ex.B
     Create a variable called "sum" and assign to it the result of the sum between 10 and 20.
 */
+let sum1 = 10 + 20;
+let sum = sum1;
 
 /* Ex.C 
     Create a variable called "random" and assign to it a random number between 0 and 20 (it should be randomly created at each execution).
