@@ -15,7 +15,7 @@
 /* Ex.A
    Create a variable called "test" and assign a string to it.
 */
-
+let test = "what string ?";
 /* Ex.B
     Create a variable called "sum" and assign to it the result of the sum between 10 and 20.
 */
