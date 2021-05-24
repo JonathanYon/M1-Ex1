@@ -219,16 +219,17 @@ const sumAllTheYears = function(){
 */
 const searchByTitle = function(str){
  
-  for (let i = 1; i < (movies[i].Title).length; i++)
+  for (let i = 1; i < (movies[i].Title).length; i++){ 
   if ((movies[i].Title).indexOf(str) > -1){
     console.log((movies[i].Title))
   }
+}
 }
 
 console.log(searchByTitle("ord"))
 
 // the above syntax will return the output below.
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // TypeError: Cannot read property 'Title' of undefined
 //     at searchByTitle (/script.js:138:34)
 //     at /script.js:144:13
@@ -241,7 +242,7 @@ console.log(searchByTitle("ord"))
 // The Lords of Salem
 // Greystoke: The Legend of Tarzan, Lord of the Apes
 // Lord of the Flies
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /* Ex.19
     Write a function called "searchAndDivide" which receives a string as a parameter and returns an object;
     this object should contain an array called "match", made by all the movies which contain the given string in the title,
