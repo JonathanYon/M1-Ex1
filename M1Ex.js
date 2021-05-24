@@ -90,7 +90,16 @@ const deleteOne = function (str, yes){
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
-
+const isThisAnEmail = function (str){
+  let str1 = str.includes("@yahoo.com")
+  let str2 = str.includes("@gmail.com")
+  let str3 = str.includes("@hotmail.com")
+  if (str1 == true || str2 == true || str3 == true){
+    return true;
+  }else {
+    return false;
+  }
+}
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
