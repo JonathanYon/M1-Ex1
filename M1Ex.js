@@ -217,6 +217,30 @@ const sumAllTheYears = function(){
 /* Ex.18
     Write a function called "searchByTitle" which receives a string as a parameter and returns all the movies which contain that string in the title.
 */
+const searchByTitle = function(str){
+ 
+  for (let i = 1; i < (movies[i].Title).length; i++)
+  if ((movies[i].Title).indexOf(str) > -1){
+    console.log((movies[i].Title))
+  }
+}
+
+console.log(searchByTitle("ord"))
+
+// the above syntax will return the output below.
+
+// TypeError: Cannot read property 'Title' of undefined
+//     at searchByTitle (/script.js:138:34)
+//     at /script.js:144:13
+// The Lord of the Rings: The Return of the King
+// The Lord of the Rings: The Two Towers
+// Lord of War
+// Lords of Dogtown
+// The Lord of the Rings
+// Lord of the Flies
+// The Lords of Salem
+// Greystoke: The Legend of Tarzan, Lord of the Apes
+// Lord of the Flies
 
 /* Ex.19
     Write a function called "searchAndDivide" which receives a string as a parameter and returns an object;
