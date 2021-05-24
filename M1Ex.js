@@ -103,9 +103,12 @@ const isThisAnEmail = function (str){
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
-let time = new Date()
-let week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-let today = week[me.getDay()]
+const whatDayIsIt = function (){
+  let time = new Date()
+  let week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+  let today = week[time.getDay()]
+  return today;
+  }
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
     It should invoke the dice() function defined in Ex1 the specified amount of times,
