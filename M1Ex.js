@@ -157,10 +157,10 @@ const isTodayMyBirthday = function (birthdate){
     Write a function called "olderMovie" which finds the oldest movie in the array provided at the end of this file.
 */
 const olderMovie = function(){
-  let startt = movies[0];
-  for (let i = 0; i < movies.length; i++){
-    if (movies[i].Year < startt.Year){
-      startt = movies[i].Title
+  let startt = movies[0];                                     // take the first element
+  for (let i = 1; i < movies.length; i++){                    // iterate from the second on
+    if (movies[i].Year < startt.Year){                         // check price, if a greater price found
+      startt = movies[i].Title                                 // replace startt with actual object.prop item
     }
   }
   return startt
