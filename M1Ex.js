@@ -252,7 +252,11 @@ console.log(searchByTitle("ord"))
 /* Ex.20
    Write a function called "removeIndex" which receives a number as a parameter and returns the movies array without the element in the given position.
 */
-
+const removeIndex = function(num){
+  movies.splice(num, 1)
+  let movie1 = movies;
+  return movie1;
+}
 // [EXTRAS] JS Advanced
 
 /* Ex.21
