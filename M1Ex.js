@@ -157,7 +157,7 @@ const isTodayMyBirthday = function (birthdate){
     Write a function called "olderMovie" which finds the oldest movie in the array provided at the end of this file.
 */
 const olderMovie = function(){
-  let startt = movies[0], i;
+  let startt = movies[0];
   for (let i = 0; i < movies.length; i++){
     if (movies[i].Year < startt.Year){
       startt = movies[i].Title
