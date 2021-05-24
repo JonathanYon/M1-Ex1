@@ -276,7 +276,11 @@ console.log(searchByTitle("ord"))
 /* Ex.23
   Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
 */
-
+const isItPrime = function (num) {
+  for(var i = 2; i < num; i++)
+    if(num % i === 0) return "Its not a prime";
+  return num > 1;
+}
 /* This movies array is used throughout the exercises. Please don't change it :)  */
 const movies = [
     {
