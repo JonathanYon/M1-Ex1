@@ -123,11 +123,29 @@ const whatDayIsIt = function (){
 /* Ex.9
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
 */
-
+const datee = function (d){
+  let aDate = new Date();
+  let bDate = aDate.getDate();
+  let numDate = d - bDate;
+  if (d < bDate){
+    return `${Math.abs(numDate)} has passed`
+  } else if (d > numDate){
+    return numDate + " days left"
+  } 
+}
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
 */
+const isTodayMyBirthday = function (birthdate){
 
+  let birth = `${birthdate[0]+birthdate[1]}/${birthdate[3]+birthdate[4]}`;
+  if (birth == "24/05"){
+    return "its your birth day"
+  } else {
+    return "its not your birthday"
+  }
+  }
+  console.log(isTodayMyBirthday("23/05/2021")) // this will return "its not your birthday" but if the argument is 24/05/2021 it will return "its your birth day"
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of this file!
 
