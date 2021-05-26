@@ -152,7 +152,9 @@ const isTodayMyBirthday = function (birthdate){
 /* Ex.11
    Write a function called "deleteProp" which receives an object and a string as parameters, and returns the given object after deleting its property named as the given string.
 */
-
+function deleteProp (obj, str){
+    delete obj[str]
+}
 /* Ex.12 
     Write a function called "olderMovie" which finds the oldest movie in the array provided at the end of this file.
 */
